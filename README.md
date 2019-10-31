@@ -1,17 +1,7 @@
 # Core
 > Template para inicialização de um projeto front-end.
 
-Este projeto tem o objetivo de padronizar a estrutura de todos os projetos criados pela WebUVV e agilizar o processo inicial do front-end entregando uma estrutura completa e pronta para usar.
-
 ## Configurações
-
-### wp-config
-1. duplique o arquivo `wp-config-sample.php` e renomeie para `wp-config.php`
-2. Defina o Server_name em WP_HOME e WP_SITEURL ('http://seuip/site-selecionado')
-3. Defina o nome do banco de dados em DB_NAME ('nome-da-base-de-dados')
-4. Defina o usuário do banco de dados em DB_USER ('web')
-5. Defina a senha de acesso a o banco de dados ('Padrao@10')
-6. Defina o servidor que o banco se encontra em DB_HOST ('10.0.0.19')
 
 ### Pré-requisitos
 
