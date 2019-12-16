@@ -1,4 +1,126 @@
 //Font weight
-$regular: 400;
-$bold: 700;
-$black: 900;
+$light: 300;
+$regular: normal;
+$medium: 500;
+$semibold: 600;
+$bold: bold;
+
+//Font
+$font: Montserrat;
+
+//Colors
+$blue-primary: #023468;
+$blue-secondary: #004B8A;
+$black: #2f3640;
+$white: #fff;
+$white-secondary: #F5F6FA;
+$grey-primary: #718093;
+$red: #e84118;
+$green: #259856;
+
+
+
+*:focus {
+	outline: none !important;
+}
+
+h2 {
+	font-family: $font;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 32px;
+	line-height: 39px;
+	color: $black;
+
+	@media (max-width: 576px) {
+		font-size: 26px;
+		line-height: 30px;
+	}
+}
+
+p {
+	font-family: $font;
+	font-style: normal;
+
+	&.question {
+		font-weight: $bold;
+		font-size: 14px;
+		line-height: 17px;
+		color: $black;
+	}
+
+	&.label {
+		font-weight: $medium;
+		font-size: 14px;
+		line-height: 15px;
+		color: $blue-secondary;
+		text-transform: uppercase;
+	}
+
+}
+
+.btn {
+	font-family: $font;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 17px;
+	border: none;
+	position: relative;
+	display: flex;
+	width: 226px;
+	height: 53px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+
+	&:focus {
+		box-shadow: none !important;
+	}
+
+	&.btn-primary {
+		background: $blue-secondary;
+		color: #FFFFFF;
+		transition: all 180ms;
+		bottom: 0;
+		
+
+		&:hover {
+			position: relative;
+			bottom: 2px;
+			background: $blue-secondary;
+			color: #FFFFFF;
+			transition: all 180ms;
+			-webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
+			-moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
+			box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2);
+		}
+
+		&:focus {
+			-webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2) !important;
+			-moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2) !important;
+			box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.2) !important;
+		}
+
+		&:not(:disabled):not(.disabled):active {
+			background-color: $blue-primary;
+			border: none;
+			color: $white;
+		}
+
+		&.success {
+			background: $green;
+		}
+
+		&.error {
+			background: $red;
+		}
+	}
+
+	.spinner-border {
+		display: none;
+		position: absolute;
+		top: 11px;
+    	left: 43%;
+	}
+}

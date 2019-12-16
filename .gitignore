@@ -1,6 +1,7 @@
 # Node_modules and dist environment
 dist/**/*
 node_modules/**/*
+package-lock.json
 
 # OSX
 *.DS_Store
