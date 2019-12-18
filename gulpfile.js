@@ -81,6 +81,7 @@ gulp.task('cssdep', function() {
 gulp.task('jsmin', function () {
   return gulp.src('src/js/**/*.js')
   .pipe(sourcemaps.init())
+  .pipe(concat('scripts.js'))
     .pipe(uglify())
   .pipe(sourcemaps.write ('./maps'))
   .pipe(gulp.dest('dist/js'));
