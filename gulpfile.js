@@ -28,7 +28,7 @@ gulp.task('clean', function () {
 gulp.task('tinypng', function () {
   return gulp.src('src/img/**/*.{jpg,jpeg,png,gif}')
     .pipe(newer('dist/img'))
-    .pipe(tinypng('p8uaA5AO38jHg8oUvHpcXX0qoyvQE6l1'))
+    .pipe(tinypng('LgxhScTbjRCs2XG89skS9jC2XG5VvMCQ'))
     .pipe(gulp.dest('dist/img'));
 });
 gulp.task('svgmin', function () {
