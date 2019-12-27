@@ -9,15 +9,22 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
+		<!--Webfonts-->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="prefetch" as="style">
+
 		<!--Dependencies-->
-		<link rel="stylesheet" href="dist/css/alldep.min.css" /> 
+		<link rel="stylesheet" href="dist/css/alldep.min.css" rel="preload" as="style"> 
 
 		<!-- Css Project -->
-		<link rel="stylesheet" href="dist/css/style.css" />
+		<link rel="stylesheet" href="dist/css/style.css" rel="preload" as="style">
 
 		<!--Tag Hotjar-->
 
 		<!--Tag Analytics-->
+
+		<!-- Script Project -->
+		<script defer src="dist/js/alldep.min.js" crossorigin="anonymous"></script>
+		<script defer src="dist/js/scripts.js" crossorigin="anonymous"></script>
 
 		<!-- twitter card data (https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary-card-with-large-image) -->
 		<meta name="twitter:card" content="summary_large_image">
@@ -37,8 +44,5 @@
 	</head>
 	<body>
 		
-		<!-- Script Project -->
-		<script src="dist/js/alldep.min.js" crossorigin="anonymous"></script>
-		<script src="dist/js/scripts.js" crossorigin="anonymous"></script>
 	</body>
 </html>
